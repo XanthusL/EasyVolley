@@ -6,7 +6,18 @@ retrofit + RxJava 的封装见[ApkBus](https://github.com/XanthusL/ApkBus)
 
 
 ## usage
+      
+      allprojects {
+          repositories {
+              ...
+              maven { url "https://jitpack.io" }
+          }
+      }
 
+      dependencies {
+          ...
+          compile 'com.github.XanthusL:EasyVolley:0.1'
+      }
 
 1.初始化,建议在Application中进行初始化操作
 
