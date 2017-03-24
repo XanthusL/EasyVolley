@@ -24,8 +24,7 @@ retrofit + RxJava 的封装见[ApkBus](https://github.com/XanthusL/ApkBus)
       EasyVolley.init(this);
       
 2.简单使用
-
-        
+```java
         // GET请求-----------------------------------------------------
         EasyVolley.stringGet("this param is URL", new EasyCallBack() {
             //请求成功的回调(http状态码200)
@@ -70,7 +69,7 @@ retrofit + RxJava 的封装见[ApkBus](https://github.com/XanthusL/ApkBus)
 
             }
         }, "?param=abc&param=456");
-
+```
 
         
 3.对请求错误的情况进行统一判断和处理
@@ -80,11 +79,11 @@ retrofit + RxJava 的封装见[ApkBus](https://github.com/XanthusL/ApkBus)
       详见EasyCallBack.java中的注释
       
 4.设置请求头.如添加授权信息等
-
+```java
       HashMap<String,String> map = new HashMap();
       map.put("test1","hahahaha");
       EasyVolley.setHeaders(map);
-        
+```
         
 ###just notes
 
