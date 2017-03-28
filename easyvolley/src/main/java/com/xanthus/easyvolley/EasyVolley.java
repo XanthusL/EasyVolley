@@ -26,7 +26,10 @@ public class EasyVolley {
         sHeaders = new HashMap<>();
     }
 
-
+    public static RequestQueue getRequestQueue() {
+        return requestQueue;
+    }
+    
     public static void httpReuqest(int type, String url, final Map<String, String> params, EasyCallBack callBack) {
         if (sRequestQueue == null) {
             throw new RuntimeException("尚未初始化,需要EasyVolley.init();");
